@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree</title>
+    <style>
+        table , td,th, tr{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <center><h2>Tree in DSA</h2></center>
+    <h2>What is tree</h2>
+    <p>Tree represents the nodes connected by edges. We will discuss binary tree or binary search tree specifically.
+
+        Binary Tree is a special datastructure used for data storage purposes. A binary tree has a special condition
+        that each node can have a maximum of two children. A binary tree has the benefits of both an ordered array and a
+        linked list as search is as quick as in a sorted array and insertion or deletion operation are as fast as in
+        linked list.</p>
+        <hr>
+        <img src="/binary_tree.jpg" alt="tree" width="50%" height="400px">
+        <hr>
+        <h2>Important Terms</h2>
+        <span>Following are the important terms related to tree</span>
+        <ul>
+            <li><b>Path--</b></li>
+            <p>Path refers to the sequence of nodes along the edges pf a tree</p>
+            <li><b>Root--</b></li>
+            <p>The node at the top of the tree is called root. There is only one root per tree and one path from the root node to any node.</p>
+            <li><b>Parent--</b></li>
+            <p>Any node except the root node has a edge upward to a node is called parent</p>
+            <li><b>Child--</b></li>
+            <p>The node below a given node connected by its edge downward is called its child node</p>
+            <li><b>Leaf--</b></li>
+            <p>The node which does not have any child node is called the leaf node.</p>
+            <li><b>Subtree--</b></li>
+            <p>Subtree represents the descendants of a node</p>
+            <hr>
+            <h2><b>Tree Node--</b></h2>
+            <p>The code to write a tree node would be similar to what is given below. It has a data part and references to its left and right child nodes.</p>
+            <pre>
+            <em>struct</em> node {
+                int data;
+                <em>struct</em> node *leftChild;
+               <em> struct</em> node *rightChild;
+            };
+
+
+            </pre>
+            <span>In a tree, all nodes share common construct</span>
+            <hr>
+            <h2>BST Basic operations</h2>
+            <p>The basic operations that can be performed on a binary search tree data structure, are the following-</p>
+            <ol>
+                <li>Insert-</li>
+                <p>
+                    Inserts an element in a tree/create a tree
+                </p>
+                <li>Search-</li>
+                <p>Searches an element in a tree.</p>
+                <li>Preorder Traversal-</li>
+                <p>Traverses a tree in a pre-order tree</p>
+                <li>Inorder Traversal-</li>
+                <p>Traverses atree in an in-order manner.</p>
+                <li>Postorder Traversal-</li>
+                <p>Traverses a tree in a post-order manner.</p>
+            </ol>
+        </ul>
+        <hr>
+    <h2>Algorithm</h2>
+    <pre>
+        if root is <strong> NULL</strong>
+        then vreate root Node
+        return
+
+        if root exists then
+        compare the the data with node data
+        while until insertion position is located
+        If data is greater than node data
+        goto right subtree
+        else
+
+        goto left subtree
+        endwhile
+        insert data
+        end if
+    </pre> 
+    <hr>
+    
+    <h2>Tree Menu Table Data</h2>
+    <table style="width: 50%;  height:300px">
+<tr>
+    <th>Id</th>
+    <th>ParenId</th>
+    <th>Name</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>0</td>
+    <td>Category1</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>1</td>
+    <td>Menu Item X</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>1</td>
+    <td>Menu Item Y</td>
+</tr>
+    </table>
+    
+</body>
+
+</html>
